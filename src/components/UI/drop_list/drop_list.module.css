@@ -1,0 +1,25 @@
+.dropIcon{
+    width: 2vw;
+    height: 2vw;
+}
+
+.dropIcon > svg > circle{
+    transition-duration: 0.1s;
+}
+
+.dropIcon:hover > svg > circle{
+    fill:white;
+    transition-duration: 0.1s;
+}
+
+.dropList{
+    border: 1px solid black;
+    position: absolute;
+    right: 10vw;
+    margin: 1vw;
+}
+
+.dropList svg{
+    width: 4vw;
+    height: 4vw;
+}

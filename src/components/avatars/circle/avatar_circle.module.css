@@ -1,0 +1,10 @@
+.avatarCircle{
+    width: 3vw;
+    height: 3vw;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.avatarCircle img{
+    width: 100%;
+}

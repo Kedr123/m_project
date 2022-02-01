@@ -1,0 +1,10 @@
+.headerNavigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 6vw;
+}
+
+.headerNavigation svg{
+    /*margin-left: 1vw;*/
+}

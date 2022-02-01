@@ -1,0 +1,7 @@
+.main{
+    background-image: url("./../../../img/fone.png");
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
