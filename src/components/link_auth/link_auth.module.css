@@ -1,0 +1,18 @@
+.linkAuth a{
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 29px;
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+
+.linkAuth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10vw;
+}
