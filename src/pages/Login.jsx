@@ -1,15 +1,15 @@
 import React from 'react';
 import Header from "../components/semantics/header/header";
-import AuthForm from "../components/forms/auth_form/auth_form";
 import './page.css'
+import LoginForm from "../components/forms/login_form/login_form";
 
-const Auth = () => {
+const Login = () => {
     return (
         <div className="auth">
             <Header/>
-            <AuthForm/>
+            <LoginForm/>
         </div>
     );
 };
 
-export default Auth;
+export default Login;

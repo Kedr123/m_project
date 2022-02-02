@@ -1,0 +1,61 @@
+.imgDonload {
+
+    border: 2px solid #756AA0;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    overflow: hidden;
+
+    font-size: 1.3vw;
+    /*padding: 1% 1% ;*/
+    margin-top: 1vw;
+
+    width: 10vw;
+    height: 10vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(117, 106, 160, 0.5);
+    font-size: 1vw;
+
+    transition-duration: 0.2s;
+
+
+
+}
+
+.imgDonload div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgDonload img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+}
+
+.imgDonload svg{
+    margin-bottom: 5%;
+    width: 50%;
+    fill: #A29BBF;
+}
+
+.imgDonload div svg path{fill: rgba(117, 106, 160, 0.3); transition-duration: 0.2s;}
+
+.imgDonload input{
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.imgDonload:hover{
+    color: rgba(117, 106, 160, 1);
+}
+
+.imgDonload:hover > div svg path{
+    fill: rgba(117, 106, 160, 1);
+}

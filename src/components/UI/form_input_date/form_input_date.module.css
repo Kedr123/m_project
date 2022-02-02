@@ -1,6 +1,4 @@
 .input{
-    /*width: 30vw;*/
-    background: #FFFFFF;
     border: 2px solid #756AA0;
     box-sizing: border-box;
     border-radius: 4px;
@@ -8,6 +6,4 @@
     font-size: 1.3vw;
     padding: 1% 1% ;
     margin-top: 1vw;
-
-
 }

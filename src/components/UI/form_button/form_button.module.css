@@ -1,3 +1,10 @@
 .button{
+    background: #756AA0;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    padding: 2% 3%;
+    border: none;
+    font-size: 1vw;
 
 }
