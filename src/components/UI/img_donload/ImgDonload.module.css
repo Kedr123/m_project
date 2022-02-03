@@ -59,3 +59,29 @@
 .imgDonload:hover > div svg path{
     fill: rgba(117, 106, 160, 1);
 }
+
+
+/*.error, .noError{*/
+/*    -ms-hyphens: auto;*/
+/*    -webkit-hyphens: auto;*/
+/*    hyphens: auto;*/
+/*}*/
+
+.error{
+    color: #d00c0c;
+}
+
+.noError{
+    opacity: 0%;
+
+}
+
+.inputError{
+    border: 2px solid #d00c0c;
+}
+
+.inputNoError{
+    border: 2px solid #756AA0;
+}
+
+

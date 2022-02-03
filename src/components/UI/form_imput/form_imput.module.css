@@ -1,13 +1,39 @@
-.input{
-    /*width: 30vw;*/
+.input input{
+    width: 100%;
     background: #FFFFFF;
-    border: 2px solid #756AA0;
     box-sizing: border-box;
     border-radius: 4px;
 
     font-size: 1.3vw;
     padding: 1% 1% ;
     margin-top: 1vw;
+    transition-duration: 1s;
 
+    color:#756AA0 ;
+}
 
+.input{
+    /*width: 100%;*/
+    transition-duration: 1s;
+}
+
+.input div{
+    transition-duration: 1s;
+}
+
+.error{
+    color: #d00c0c;
+}
+
+.noError{
+    opacity: 0%;
+
+}
+
+.inputError{
+    border: 2px solid #d00c0c;
+}
+
+.inputNoError{
+    border: 2px solid #756AA0;
 }

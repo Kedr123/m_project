@@ -1,0 +1,164 @@
+.louder{
+    width: 125px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle1, .circle2, .circle3{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgba(117, 106, 160, 1);
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    border:solid 5px rgba(117, 106, 160, 1);
+}
+
+.circle1{
+    animation-name: loud1;
+    background: #E8D88F;
+}
+
+@keyframes loud1 {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    8.33%{
+        transform: translate(-25px, 25px);
+    }
+    16.66%{
+        transform: translate(0px, 50px);
+    }
+    24.99%{
+        transform: translate(25px, 75px);
+    }
+    33.33%{
+        transform: translate(0px, 100px);
+    }
+    41.66%{
+        transform: translate(0px, 100px);
+    }
+    49.99%{
+        transform: translate(0px, 100px);
+    }
+    58.33%{
+        transform: translate(-25px, 75px);
+    }
+    66.66%{
+        transform: translate(0px, 50px);
+    }
+    74.99%{
+        transform: translate(25px, 25px);
+    }
+    83.33%{
+        transform: translate(0px, 0px);
+    }
+    91.66%{
+        transform: translate(0px, 0px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+
+}
+
+.circle2{
+    animation-name: loud2;
+    background: #e01c3f;
+
+}
+
+@keyframes loud2 {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    8.33%{
+        transform: translate(25px, -25px);
+    }
+    16.66%{
+        transform: translate(0px, -50px);
+    }
+    24.99%{
+        transform: translate(0px, -50px);
+    }
+    33.33%{
+        transform: translate(0px, -50px);
+    }
+    41.66%{
+        transform: translate(-25px, -25px);
+    }
+    49.99%{
+        transform: translate(0px, -0px);
+    }
+    58.33%{
+        transform: translate(25px, 25px);
+    }
+    66.66%{
+        transform: translate(0px, 50px);
+    }
+    74.99%{
+        transform: translate(0px, 50px);
+    }
+    83.33%{
+        transform: translate(0px, 50px);
+    }
+    91.66%{
+        transform: translate(-25px, 25px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+
+}
+
+.circle3{
+    animation-name: loud3;
+    background: #8fb6e8;
+}
+
+@keyframes loud3 {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    8.33%{
+        transform: translate(0px, 0px);
+    }
+    16.66%{
+        transform: translate(0px, 0px);
+    }
+    24.99%{
+        transform: translate(-25px, -25px);
+    }
+    33.33%{
+        transform: translate(0px, -50px);
+    }
+    41.66%{
+        transform: translate(25px, -75px);
+    }
+    49.99%{
+        transform: translate(0px, -100px);
+    }
+    58.33%{
+        transform: translate(0px, -100px);
+    }
+    66.66%{
+        transform: translate(0px, -100px);
+    }
+    74.99%{
+        transform: translate(-25px, -75px);
+    }
+    83.33%{
+        transform: translate(0px, -50px);
+    }
+    91.66%{
+        transform: translate(25px, -25px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+
+}
+

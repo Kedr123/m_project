@@ -6,7 +6,6 @@ import './page.css'
 const Auth = () => {
     return (
         <div className="auth">
-            <Header/>
             <AuthForm/>
         </div>
     );

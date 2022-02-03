@@ -18,7 +18,6 @@ function MyPage() {
 
     return (
         <div>
-            <Header user={user}/>
             <Main user={user}/>
         </div>
     );
