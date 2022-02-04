@@ -1,35 +1,8 @@
-.form{
-
-    display: flex;
-    flex-direction: column;
-
-    padding: 2vw;
-
-    background: rgba(255, 255, 255, 0.7);
-    border: 3px solid #A29BBF;
-    box-sizing: border-box;
-    border-radius: 5px;
-
-    margin-top: 5vh;
-
-}
-
-.form a{
-    font-family: Russo One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.5vw;
-    line-height: 29px;
-    text-align: center;
-    text-decoration-line: underline;
-
-    color: #756AA0;
-}
 
 .groupFlex{
     display: flex;
     justify-content: space-between;
-
+    margin-top: 1.5vh;
 }
 
 .form_footer{
@@ -37,6 +10,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 5%;
+    width: 100%;
 }
 
 .groupFlexColomn{
@@ -46,3 +20,4 @@
 
     justify-content: space-between;
 }
+

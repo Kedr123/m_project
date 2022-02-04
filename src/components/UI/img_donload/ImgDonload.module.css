@@ -68,6 +68,8 @@
 /*}*/
 
 .error{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
     color: #d00c0c;
 }
 

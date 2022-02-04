@@ -2,5 +2,5 @@
     font-family: Russo One;
     font-style: normal;
     font-weight: normal;
-    font-size: 2vw;
+    font-size: max(2vw,20pt);
 }

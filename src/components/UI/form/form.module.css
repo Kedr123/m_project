@@ -1,0 +1,78 @@
+.form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2vw;
+
+    background: rgba(255, 255, 255, 0.7);
+    border: 3px solid #A29BBF;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    margin: 10vh 0;
+
+    /*transition-duration: 1s;*/
+
+    min-width: 250px;
+}
+
+.form a{
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: max(1.5vw,15pt);
+    line-height: 29px;
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #756AA0;
+}
+
+.groupFlex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: max(1.5vh);
+}
+
+form .form_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+
+    width: 100%;
+}
+
+.groupFlexColomn{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2%;
+
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .form{
+        width: 100%;
+        border: none;
+        padding: 0 max(35px, 10.9375%);
+
+    }
+    .contener{
+        width: 100%;
+    }
+    .displayNon{
+        display: none;
+    }
+    .groupFlexColomn{
+        width: 100%;
+        margin: 0;
+    }
+    .groupFlex{
+        width: 100%;
+
+    }
+
+}

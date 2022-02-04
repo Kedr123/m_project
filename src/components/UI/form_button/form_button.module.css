@@ -5,6 +5,9 @@
     text-decoration: none;
     padding: 2% 3%;
     border: none;
-    font-size: 1vw;
+    font-size: max(1vw,10pt);
+}
 
+.button:disabled{
+    background: #858585;
 }

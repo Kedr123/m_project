@@ -2,7 +2,7 @@
     font-family: Russo One;
     font-style: normal;
     font-weight: normal;
-    font-size: 1vw;
+    font-size: max(1vw,10pt);
     line-height: 29px;
     text-align: center;
     text-decoration-line: underline;
@@ -14,5 +14,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 10vw;
+    width: max(10vw,125px);
+}
+
+@media (max-width: 767px) {
+    .linkAuth{
+        display: none;
+    }
 }

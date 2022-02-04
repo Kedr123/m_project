@@ -1,10 +1,14 @@
+
+
 .input input{
     width: 100%;
     background: #FFFFFF;
     box-sizing: border-box;
     border-radius: 4px;
 
-    font-size: 1.3vw;
+    font-size: max(1.3vw,12pt);
+    min-width: 250px;
+    /*min-font-size: pt;*/
     padding: 1% 1% ;
     margin-top: 1vw;
     transition-duration: 1s;
@@ -13,7 +17,7 @@
 }
 
 .input{
-    /*width: 100%;*/
+    width: 100%;
     transition-duration: 1s;
 }
 
@@ -22,6 +26,8 @@
 }
 
 .error{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
     color: #d00c0c;
 }
 
