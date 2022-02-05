@@ -1,27 +1,53 @@
 import axios from "axios";
+import Service from "./Service";
 
-export default class UserService{
+export default class UserService {
 
-    static async show(){
-        const response = await axios.get('http://m-project-api/public/api/user/1');
+    static async show() {
+        const response = await axios.get(Service.domain() + 'user/1');
         console.log(response)
         return response.data;
     }
 
-    static async store(user, avatar){
-
-        console.log(avatar)
-
+    static async store(user, avatar) {
         let form = new FormData();
 
         for (let key in user) {
-            form.append(key , user[key]);
+            form.append(key, user[key]);
         }
-        form.append("avatar" , avatar);
 
-        console.log("avatar")
-        const response = await  axios.post('http://m-project-api/api/reg', form );
-        console.log(response.data)
+        form.append("avatar", avatar);
+
+        const response = await axios.post(Service.domain() + 'reg', form);
+
+        return response.data;
+    }
+
+    static async login(user) {
+        let form = new FormData();
+
+        for (let key in user) {
+            form.append(key, user[key]);
+        }
+
+        const response = await axios.post(Service.domain() + 'auth/login', form);
+        console.log(response)
         return response;
     }
+
+    static async check(token) {
+
+        const response = await axios.post(Service.domain() + 'auth/check', {}, { headers: { Authorization: "Bearer " + token } });
+        console.log(response)
+        return response
+    }
+
+    static async refresh(token) {
+
+        const response = await axios.post(Service.domain() + 'auth/refresh', {}, { headers: { Authorization: "Bearer " + token } });
+
+        console.log(response)
+    }
+
+
 }

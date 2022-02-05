@@ -21,3 +21,15 @@
     justify-content: space-between;
 }
 
+.error{
+    margin-top: 0.5vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    color: #d00c0c;
+}
+
+.noError{
+    margin-top: 0.5vh;
+    opacity: 0%;
+
+}

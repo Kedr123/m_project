@@ -1,0 +1,37 @@
+.louderEnter {
+    opacity: 0;
+    /*transform: scale(0.9);*/
+}
+.louderEnterActive {
+    opacity: 1;
+    /*transform: translateX(0);*/
+    /*transition: opacity 300ms, transform 300ms;*/
+    transition: opacity 600ms;
+}
+.louderExit {
+    opacity: 1;
+}
+.louderExitActive {
+    opacity: 0;
+    /*transform: scale(0.9);*/
+    /*transition: opacity 300ms, transform 300ms;*/
+    transition: opacity 10000ms;
+}
+
+.louder{
+    position: fixed;
+    /*top: 0;*/
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    /*background-color: #FFFFFF;*/
+
+    /*padding: calc(50vh - 62.5px) calc(50vw - 62.5px) ;*/
+    padding-left:   calc(50vw - 62.5px) ;
+    padding-right:  calc(50vw - 62.5px) ;
+    padding-top:  calc(50vh - 202px) ;
+    /*padding-bottom: calc(50vh - 125px);*/
+
+    /*padding: calc(50vh - 62.5px) calc(50vw - 62.5px) ;*/
+}

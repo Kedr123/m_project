@@ -1,5 +1,5 @@
 export default class Service{
     static domain(){
-        return ""
+        return "http://m-project-api/api/"
     }
 }
