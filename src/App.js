@@ -8,12 +8,14 @@ import Login from "./pages/Login";
 import Header from "./components/semantics/header/header";
 import {AuthContext} from "./context";
 import UserService from "./API/UserService";
-import Louder from "./components/UI/louder/louder";
+import Louder from "./components/UI/louders/louder/louder";
 import {CSSTransition} from "react-transition-group";
+import MessengerPage from "./pages/MessengerPage";
 
 
 function App() {
     const [token, setToken] = useState('');
+    const [user, setUser] = useState('');
     const [louder, setLouder] = useState(false);
 
     useEffect(async () => {
@@ -24,13 +26,17 @@ function App() {
             let check = await UserService.check(thisToken)
             if (check.data) {
                 setToken(thisToken);
+                let newUser = await UserService.me(thisToken);
+                setUser(newUser.data)
             } else {
                 try {
-                    setToken(await UserService.refresh(thisToken));
-                    localStorage.setItem('token', token);
+                    let newToken = await UserService.refresh(thisToken);
+                    setToken(newToken);
+                    localStorage.setItem('token', newToken);
 
                 } catch (e) {
                     localStorage.removeItem('token');
+                    setToken('');
                 }
 
 
@@ -43,10 +49,19 @@ function App() {
     return (
         <AuthContext.Provider value={{
             token,
-            setToken
+            setToken,
+            user,
+            setUser,
+            domen : "http://m-project-api/public/storage/avatars/"
         }}>
             <BrowserRouter>
-                <Header/>
+                {
+                    token
+                        ?<Header/>
+                        :<Header/>
+
+                }
+
 
                     <CSSTransition in={louder} classNames={{
                         enterActive: classes.louderEnter,
@@ -65,6 +80,7 @@ function App() {
                         ?
                         <Routes>
                             <Route path="/mypage" element={<MyPage/>}/>
+                            <Route path="/messages" element={<MessengerPage/>} />
                             <Route path="*" element={<MyPage/>}/>
                         </Routes>
                         :

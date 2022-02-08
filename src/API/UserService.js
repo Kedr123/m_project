@@ -9,6 +9,12 @@ export default class UserService {
         return response.data;
     }
 
+    static async me(token) {
+        const response = await axios.post(Service.domain() + 'auth/me',{},{ headers: { Authorization: "Bearer " + token } });
+        console.log(response)
+        return response;
+    }
+
     static async store(user, avatar) {
         let form = new FormData();
 
@@ -46,7 +52,7 @@ export default class UserService {
 
         const response = await axios.post(Service.domain() + 'auth/refresh', {}, { headers: { Authorization: "Bearer " + token } });
 
-        console.log(response)
+        return response
     }
 
 

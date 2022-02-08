@@ -13,7 +13,7 @@ const LoginForm = () => {
     const [form,setForm]=useState({email:'',password:''})
     const [error,setError]=useState('')
 
-    const {token, setToken} = useContext(AuthContext)
+    const {token, setToken, setUser} = useContext(AuthContext)
 
     async function requestForm(e){
         e.preventDefault();
@@ -22,6 +22,8 @@ const LoginForm = () => {
             setError("");
             setToken(response.data.access_token);
             localStorage.setItem('token', response.data.access_token);
+            let user = await UserService.me(response.data.access_token);
+            setUser(user.data)
         }
         catch (e){
             if (e.message == "Request failed with status code 401") setError("Введены некоректные данные");

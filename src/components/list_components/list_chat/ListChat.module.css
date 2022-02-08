@@ -1,0 +1,41 @@
+.ListChat{
+    background: #FFFFFF;
+    border: 6px solid #756AA0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 320px;
+    height: 860px;
+
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.item{
+    margin-top: 7px;
+}
+
+.list{
+
+}
+
+
+.search{
+    background: #FFFFFF;
+    border: 0px solid #756AA0;
+    border-bottom-width: 1px ;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+
+.search input{
+    background: #FFFFFF;
+    border: 1px solid #756AA0;
+    box-sizing: border-box;
+    border-radius: 17px;
+
+    font-size: 18px;
+    padding: 5px 4%;
+}

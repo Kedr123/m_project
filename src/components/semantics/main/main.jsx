@@ -3,10 +3,10 @@ import classes from "./main.module.css";
 import AvatarSquare from "../../avatars/square/avatar_square";
 
 
-const Main = (props) => {
+const Main = () => {
     return (
         <main className={classes.main}>
-            <AvatarSquare src={props.user.avatar} />
+            <AvatarSquare />
         </main>
     );
 };

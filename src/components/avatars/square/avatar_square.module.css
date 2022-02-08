@@ -3,8 +3,18 @@
     height: 8vw;
     overflow: hidden;
     border-radius: 5px;
+    position: relative;
+
 }
 
 .avatar img{
     width: 100%;
+}
+
+.Non{
+    display: none;
+}
+
+.flex{
+    display: block;
 }

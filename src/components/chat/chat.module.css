@@ -1,0 +1,12 @@
+.chat{
+    background: #FFFFFF;
+    border: 6px solid #756AA0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 860px;
+
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: column;
+    align-items: center;
+}

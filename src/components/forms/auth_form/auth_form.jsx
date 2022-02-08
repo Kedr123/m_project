@@ -7,7 +7,7 @@ import ImgDonload from "../../UI/img_donload/ImgDonload";
 import FormInputDate from "../../UI/form_input_date/form_input_date";
 import {Link} from "react-router-dom";
 import UserService from "../../../API/UserService";
-import Louder from "../../UI/louder/louder";
+import Louder from "../../UI/louders/louder/louder";
 import Form from "../../UI/form/form";
 
 const AuthForm = () => {
@@ -42,8 +42,8 @@ const AuthForm = () => {
         let response = await UserService.store(user, avatar);
         console.log(response)
         setError({...response.data.error})
-        if (response.data.error.length == 0) setRequest(false);
-        setLouder(false);
+        if (!response.data.error) setRequest(false);
+        setLouder(true);
     }
 
     // Валидация формы

@@ -1,24 +1,14 @@
-import React, {useEffect, useState} from "react";
-import UserService from "../API/UserService";
-import Header from "../components/semantics/header/header";
+import React from "react";
 import Main from "../components/semantics/main/main";
 
 
 function MyPage() {
 
-    const [user, setUser] = useState({});
-
-    useEffect(() => {
-        getUser()
-    }, []);
-
-    async function getUser() {
-        setUser(await UserService.show());
-    }
+    // const {user} = useContext(AuthContext);
 
     return (
         <div>
-            <Main user={user}/>
+            <Main/>
         </div>
     );
 }

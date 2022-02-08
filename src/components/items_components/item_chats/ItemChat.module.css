@@ -1,0 +1,88 @@
+.ItemChat, .ItemChatActive{
+
+    width: 290px;
+    height: 60px;
+
+    background: #FFFFFF;
+    border: 1px solid #756AA0;
+    box-sizing: border-box;
+    border-radius: 63px;
+
+    display: flex;
+    align-items: center;
+    /*justify-content: space-around;*/
+    /*padding: 10px;*/
+}
+
+.ItemChatActive{
+    background: #756AA0;
+    color: #FFFFFF;
+}
+
+.ItemChat:hover{
+    background: #f3f3f3;
+}
+
+.ItemChat img{
+    width: 37px;
+    height: 37px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.ItemChatActive img{
+    width: 37px;
+    height: 37px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.ItemChatActive .lastMessage {
+    color: #E0E0E0;
+}
+.ItemChatActive  .date{
+    color: #E0E0E0;
+}
+
+
+.Non{
+    display: none;
+}
+
+.block{
+    display: block;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text{
+    width: 210px;
+}
+
+.name{
+    font-family: 'Reem Kufi', sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 14px;
+    line-height: 21px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.lastMessage, .date{
+    font-family: 'Reem Kufi', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #5F5C5C;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

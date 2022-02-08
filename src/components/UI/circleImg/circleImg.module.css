@@ -1,0 +1,15 @@
+.circleImg img{
+    width: 100%;
+    width: 37px;
+    height: 37px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.Non{
+    display: none;
+}
+
+.block{
+    display: block;
+}
