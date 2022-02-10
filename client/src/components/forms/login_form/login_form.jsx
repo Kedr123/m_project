@@ -1,6 +1,6 @@
 import React, {useContext, useRef, useState} from 'react';
 import classes from "./login_form.module.css";
-import FormImput from "../../UI/form_imput/form_imput";
+import FormImput from "../../UI/inputs/form_imput/form_imput";
 import FormButton from "../../UI/form_button/form_button";
 import RussoOneText from "../../fonts/ russo_one_text/RussoOneText";
 import {Link} from "react-router-dom";

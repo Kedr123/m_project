@@ -1,10 +1,10 @@
 import React, {useEffect, useMemo, useState} from 'react';
 import classes from "./auth_form.module.css";
-import FormImput from "../../UI/form_imput/form_imput";
+import FormImput from "../../UI/inputs/form_imput/form_imput";
 import FormButton from "../../UI/form_button/form_button";
 import RussoOneText from "../../fonts/ russo_one_text/RussoOneText";
 import ImgDonload from "../../UI/img_donload/ImgDonload";
-import FormInputDate from "../../UI/form_input_date/form_input_date";
+import FormInputDate from "../../UI/inputs/form_input_date/form_input_date";
 import {Link} from "react-router-dom";
 import UserService from "../../../API/UserService";
 import Louder from "../../UI/louders/louder/louder";

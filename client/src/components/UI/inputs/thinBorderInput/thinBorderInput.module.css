@@ -1,0 +1,11 @@
+.thinBorderInput{
+    background: #FFFFFF;
+    border: 1px solid #756AA0;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-size: 18px;
+    padding: 5px 4%;
+
+    width: 570px;
+}

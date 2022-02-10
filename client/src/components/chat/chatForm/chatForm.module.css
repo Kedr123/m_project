@@ -1,0 +1,9 @@
+.chatForm{
+    background: #FFFFFF;
+    border:solid #756AA0;
+    border-width:  1px 0px 0px 0 ;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 60px;
+}
