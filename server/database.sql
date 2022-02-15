@@ -47,3 +47,8 @@ create TABLE tokens(
 );
 
 
+SELECT * FROM users;
+DELETE FROM tokens WHERE user_id = 12;
+
+DELETE FROM users WHERE name = 'sdf';
+

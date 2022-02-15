@@ -18,33 +18,33 @@ function App() {
     const [user, setUser] = useState('');
     const [louder, setLouder] = useState(false);
 
-    useEffect(async () => {
-        setLouder(true)
-        let thisToken = localStorage.getItem('token');
-
-        if (thisToken) {
-            let check = await UserService.check(thisToken)
-            if (check.data) {
-                setToken(thisToken);
-                let newUser = await UserService.me(thisToken);
-                setUser(newUser.data)
-            } else {
-                try {
-                    let newToken = await UserService.refresh(thisToken);
-                    setToken(newToken);
-                    localStorage.setItem('token', newToken);
-
-                } catch (e) {
-                    localStorage.removeItem('token');
-                    setToken('');
-                }
-
-
-            }
-        }
-        setLouder(false)
-
-    }, [])
+    // useEffect(async () => {
+    //     setLouder(true)
+    //     let thisToken = localStorage.getItem('token');
+    //
+    //     if (thisToken) {
+    //         let check = await UserService.check(thisToken)
+    //         if (check.data) {
+    //             setToken(thisToken);
+    //             let newUser = await UserService.me(thisToken);
+    //             setUser(newUser.data)
+    //         } else {
+    //             try {
+    //                 let newToken = await UserService.refresh(thisToken);
+    //                 setToken(newToken);
+    //                 localStorage.setItem('token', newToken);
+    //
+    //             } catch (e) {
+    //                 localStorage.removeItem('token');
+    //                 setToken('');
+    //             }
+    //
+    //
+    //         }
+    //     }
+    //     setLouder(false)
+    //
+    // }, [])
 
     return (
         <AuthContext.Provider value={{
